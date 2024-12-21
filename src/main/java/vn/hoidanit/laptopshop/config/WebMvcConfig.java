@@ -27,3 +27,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
     registry.viewResolver(viewResolver());
   }
 }
+
+
+// dung code de cau hinh file jsp 
+// render file dong
