@@ -18,11 +18,25 @@
     <!--<link href= "/css/demo.css" rel="stylesheet">--> 
 </head>
 <body>
-     hello from jsp
+    hello from jsp
      <h1>
         ${eric}
      </h1>
      <h2>${hoidanit}</h2>
-     <button class ="btn btn-warning"> Submit </button>
+     <button class ="btn btn-warning"> Submit </button> 
+    <!-- <a href = "https://en.wikipedia.org/wiki/Yua_Mikami" >
+        <image src ="images/Yua-Mikami-6.jpg" width ="300px" title="my わいふ"> </image>
+    </a>
+    <form>
+        
+        <div>
+            <input type ="radio" name="job" > Học Sinh
+            <input type ="radio" name ="job"> Giáo viên
+            <input type ="radio" name ="job"> Giám đốc
+        </div>
+        <input type ="submit">
+        <input type ="reset">
+    </form>
+-->
 </body>
 </html>

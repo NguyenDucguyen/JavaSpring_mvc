@@ -23,19 +23,13 @@ public class WebMvcConfig implements WebMvcConfigurer {
     return bean;
   }
 
+  @SuppressWarnings("null") // neu sau co loi thi xoa no di
   @Override
   public void configureViewResolvers(ViewResolverRegistry registry) {
     registry.viewResolver(viewResolver());
   }
 
-   /*
-     * Configure ResourceHandlers to serve static resources like CSS/ Javascript etc...
-     *
-     */
-     /*
-     * Configure ResourceHandlers to serve static resources like CSS/ Javascript etc...
-     *
-     */
+    @SuppressWarnings("null")  // neu sau gap loi thi xoa no di
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/css/**").addResourceLocations("/resources/css/");
