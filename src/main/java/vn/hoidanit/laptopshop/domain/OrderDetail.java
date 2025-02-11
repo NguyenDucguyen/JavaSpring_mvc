@@ -12,7 +12,7 @@ import jakarta.persistence.Table;
 @Table(name = "order_detail")
 public class OrderDetail {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) 
     private long id;
 
     private long quantity;

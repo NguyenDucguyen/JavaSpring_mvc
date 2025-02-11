@@ -15,7 +15,7 @@ import jakarta.persistence.Table;
 @Table(name = "orders")
 public class Order {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)  
     private long id;
     
     private double totalPrice;
@@ -27,6 +27,7 @@ public class Order {
 
     @OneToMany(mappedBy = "order")
     List<OrderDetail>orderDetails;
+
 
     public long getId() {
         return id;
