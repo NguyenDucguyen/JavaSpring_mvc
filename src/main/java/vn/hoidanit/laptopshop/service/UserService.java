@@ -43,7 +43,7 @@ public class UserService {
         this.userRepository.deleteById(id);
     }
 
-    public Role getRolebyName(String name){
+    public Role getRoleByName(String name){
         return  this.roleRepository.findByName(name);
     }
 

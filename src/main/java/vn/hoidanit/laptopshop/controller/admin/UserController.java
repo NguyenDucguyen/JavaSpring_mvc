@@ -75,6 +75,9 @@ public class UserController {
        
         hoidanit.setAvatar(avatar);
         hoidanit.setPassword(hashPassword);
+        hoidanit.setRole(this.userService.getRoleByName(hoidanit.getRole().getName()));
+
+        //save
         this.userService.handleSaveUser(hoidanit);
         return "redirect:/admin/user";
     }
