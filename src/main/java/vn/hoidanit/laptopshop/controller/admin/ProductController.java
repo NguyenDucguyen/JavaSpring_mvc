@@ -18,5 +18,6 @@ public class ProductController {
      public String getProductDetail(Model model, @PathVariable long id) {
          return "admin/product/detail";
      }
-     
 }
+
+// Nguyen dep  trai vl
