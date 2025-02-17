@@ -57,22 +57,7 @@
                                             </figcaption>
                                         </figure>
                                     </li>
-                                    <li class="col-md-4">
-                                        <figure class="itemside mb-3">
-                                            <div class="aside"><img src="https://i.imgur.com/tVBy5Q0.png" class="img-sm border"></div>
-                                            <figcaption class="info align-self-center">
-                                                <p class="title">HP Laptop with 500GB HDD <br> 8GB RAM</p> <span class="text-muted">$850 </span>
-                                            </figcaption>
-                                        </figure>
-                                    </li>
-                                    <li class="col-md-4">
-                                        <figure class="itemside mb-3">
-                                            <div class="aside"><img src="https://i.imgur.com/Bd56jKH.png" class="img-sm border"></div>
-                                            <figcaption class="info align-self-center">
-                                                <p class="title">ACER Laptop with 500GB HDD <br> 8GB RAM</p> <span class="text-muted">$650 </span>
-                                            </figcaption>
-                                        </figure>
-                                    </li>
+                              
                                 </ul>
                                 <hr>
                                 <a href="#" class="btn btn-warning" data-abc="true"> <i class="fa fa-chevron-left"></i> Back to orders</a>
