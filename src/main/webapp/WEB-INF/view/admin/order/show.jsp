@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="Hỏi Dân IT - Dự án laptopshop" />
     <meta name="author" content="Hỏi Dân IT" />
-    <title>Dashboard - Hỏi Dân IT</title>
+    <title>Dashboard</title>
     <link href="/css/styles.css" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 </head>
@@ -28,42 +28,48 @@
                     </ol>
                      <!-- begin -->
 
-                     <div class="container">
-                        <article class="card">
-                            <header class="card-header"> My Orders / Tracking </header>
-                            <div class="card-body">
-                                <h6>Order ID: OD45345345435</h6>
-                                <article class="card">
-                                    <div class="card-body row">
-                                        <div class="col"> <strong>Estimated Delivery time:</strong> <br>29 nov 2025 </div>
-                                        <div class="col"> <strong>Shipping BY:</strong> <br> BLUEDART, | <i class="fa fa-phone"></i> +840865772690 </div>
-                                        <div class="col"> <strong>Status:</strong> <br> Picked by the courier </div>
-                                        <div class="col"> <strong>Tracking #:</strong> <br> BD045903594059 </div>
-                                    </div>
-                                </article>
-                                <div class="track">
-                                    <div class="step active"> <span class="icon"> <i class="fa fa-check"></i> </span> <span class="text">Order confirmed</span> </div>
-                                    <div class="step active"> <span class="icon"> <i class="fa fa-user"></i> </span> <span class="text"> Picked by courier</span> </div>
-                                    <div class="step"> <span class="icon"> <i class="fa fa-truck"></i> </span> <span class="text"> On the way </span> </div>
-                                    <div class="step"> <span class="icon"> <i class="fa fa-box"></i> </span> <span class="text">Ready for pickup</span> </div>
+                     <div class="mt-5">
+                        <div class="row">
+                            <div class="col-12 mx-auto">
+                                <div class="d-flex justify-content-between">
+                                    <h3>Table orders</h3>
+                                    <a href="/admin/user/create" class="btn btn-primary">Create orders</a>
                                 </div>
-                                <hr>
-                                <ul class="row">
-                                    <li class="col-md-4">
-                                        <figure class="itemside mb-3">
-                                            <div class="aside"><img src="https://i.imgur.com/iDwDQ4o.png" class="img-sm border"></div>
-                                            <figcaption class="info align-self-center">
-                                                <p class="title">Dell Laptop with 500GB HDD <br> 8GB RAM</p> <span class="text-muted">$950 </span>
-                                            </figcaption>
-                                        </figure>
-                                    </li>
-                              
-                                </ul>
-                                <hr>
-                                <a href="#" class="btn btn-warning" data-abc="true"> <i class="fa fa-chevron-left"></i> Back to orders</a>
+                    
+                                <hr />
+                                <table class=" table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>total_price</th>
+                                            <th>Action</th>
+                                          
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <c:forEach var="product" items="${product1}">
+                    
+                                            <tr>
+                                                <th>${orders.id}</th>
+                                                <td>${orders.total_price}</td>
+                                       
+                                                <td>
+                                                    <a href="/admin/user/${user.id}"
+                                                        class="btn btn-success">View</a>
+                                                    <a href="/admin/user/update/${user.id}"
+                                                        class="btn btn-warning  mx-2">Update</a>
+                                                    <a href="/admin/user/delete/${user.id}"
+                                                        class="btn btn-danger">Delete</a>
+                                                </td>
+                                            </tr>
+                    
+                                        </c:forEach>
+                    
+                                    </tbody>
+                                </table>
                             </div>
-                        </article>
-                    </div>
+                    
+                        </div>
                      <!-- end  -->
                 </div>
             </main>
